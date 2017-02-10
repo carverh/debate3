@@ -3,6 +3,7 @@
 ## Index
 * [Index](#index)
 * [Sources](#sources)
+* [Proposition](#proposition)
 * [Arguments](#arguments)
 
 ## Sources
@@ -14,4 +15,3 @@
 **Resolved**: That the US Government should withdraw from the NPT.
 
 ## Arguments
-## 
