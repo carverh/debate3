@@ -13,7 +13,7 @@
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
         $.get("page.md", function(result) {
-        var converter = new showdown.Converter({"simplifiedAutoLink": true}),
+        var converter = new showdown.Converter({"simplifiedAutoLink": true, "ghCompatibleHeaderId": true, "ghMentions": true}),
             text      = result,
             html      = converter.makeHtml(text); 
         $("#content").append(html);
