@@ -1,7 +1,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.3/showdown.min.js"></script>
-<script src="https://code.jquery.com/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
-$.get("index.md", function(result) {
+$.get("page.md", function(result) {
 var converter = new showdown.Converter(),
     text      = result,
     html      = converter.makeHtml(text);
