@@ -4,7 +4,7 @@
 $.get("page.md", function(result) {
 var converter = new showdown.Converter(),
     text      = result,
-    html      = converter.makeHtml(text);
-});
+    html      = converter.makeHtml(text); 
 document.write(html);
+});
 </script>
