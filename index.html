@@ -9,9 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.3/showdown.min.js"></script>
+	<style>
+	p {
+		font-size: 12pt;
+		line-height: 1.2em;
+	}
+	</style>        
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.3/showdown.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
+	if(!window.jQuery) document.write("<h1>jQuery is required</h1>");
         $.get("page.md", function(result) {
         var converter = new showdown.Converter({"simplifiedAutoLink": true, "ghCompatibleHeaderId": true, "ghMentions": true}),
             text      = result,
@@ -21,6 +28,9 @@
         </script>
     </head>
     <body>
+	<noscript>
+		<h1>Javascript is required to view this page</h1>
+	</noscript>
         <div class="container" id="content"></div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
